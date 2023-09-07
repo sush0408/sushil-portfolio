@@ -10,23 +10,44 @@
     <title>Sushil Singh</title>
     <style>
         /* General Styles */
-        body {
+        body, html {
             font-family: 'Arial', sans-serif;
-            color: #333;
+            color: #fff;
             margin: 0;
             padding: 0;
+            height: 100%;
             background: linear-gradient(145deg, #6b7bfe, #8e9efe);
             overflow-x: hidden;
         }
 
         .container {
-            background-color: rgba(255,255,255,0.8); /* semi-transparent white */
+            position: relative;
+            z-index: 1;
+            background-color: rgba(10,10,30,0.9);
             padding: 40px;
             border-radius: 10px;
             width: 90%;
             max-width: 1100px;
             margin: 50px auto;
-            box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Background Patterns and Animation */
+        @keyframes moveBackground {
+            0% {background-position: 0 0;}
+            100% {background-position: 50px 50px;}
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 1px 1px, #6b7bfe 1px, transparent 1px),
+                radial-gradient(circle at 1px 1px, #8e9efe 1px, transparent 1px) 50px 50px;
+            background-size: 100px 100px;
+            animation: moveBackground 10s linear infinite;
         }
 
         /* Typography Styles */
@@ -36,15 +57,16 @@
         }
 
         a {
-            color: #5a67f2;
+            color: #96a8ff;
             text-decoration: none;
+            transition: color 0.3s;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #fff;
         }
 
-        /* Flexbox for Layout */
+        /* Layout Styles */
         .contact, .skills {
             display: flex;
             justify-content: space-between;
@@ -58,18 +80,20 @@
             margin-bottom: 25px;
         }
 
-        /* Special Styles for Visual Enhancement */
+        /* Styling Highlights */
         h1 {
-            color: #5a67f2;
+            color: #96a8ff;
             font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
         }
 
         h2, h3 {
-            color: #4a57d9;
+            color: #c2c6ff;
         }
 
         p, li {
             line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
         }
 
     </style>
