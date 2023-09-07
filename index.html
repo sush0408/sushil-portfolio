@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushil Singh</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Sushil Singh</title>
     <style>
         body {
-            background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
             font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, #e6e6ff, #cce7ff);
         }
-
-        .card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(5px);
+        #landing {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-
-        .card-title {
-            font-weight: bold;
+        #skills .col {
+            text-align: center;
+            padding: 2em;
+        }
+        #experience .timeline-icon {
+            font-size: 1.5em;
         }
     </style>
 </head>
-
 <body>
+    <!-- Landing Section -->
+    <div id="landing">
+        <div class="container">
+            <h2 class="header center-align">Sushil Singh</h2>
+            <h5 class="center-align">Technical Lead (Enterprise Engineering) | Nodejs | Golang | Kubernetes</h5>
+        </div>
+    </div>
 
-    <div class="container">
+    <!-- Skills Section -->
+    <div id="skills" class="container">
         <div class="row">
-            <div class="col s12 m8 offset-m2">
-                <div class="card hoverable z-depth-5">
-                    <div class="card-content">
-                        <span class="card-title center">Sushil Singh</span>
-                        <p class="center">Technical Lead (Enterprise Engineering) | Software Architect</p>
-                        <div class="divider"></div>
-                        <h5>Contact</h5>
-                        <p><i class="material-icons">phone</i> 8768777710</p>
-                        <p><i class="material-icons">email</i> sushil@cvtrobotics.in</p>
-                        <p><i class="material-icons">web</i> <a href="https://www.linkedin.com/in/sushil0408" target="_blank">LinkedIn</a></p>
-                        <p><i class="material-icons">business_center</i> <a href="https://www.wityliti.io" target="_blank">Wityliti</a></p>
-                        <p><i class="material-icons">business_center</i> <a href="https://cvtrobotics.in" target="_blank">CVT Robotics</a></p>
-
-                        <h5>Skills</h5>
-                        <p><i class="material-icons">code</i> Node.js</p>
-                        <p><i class="material-icons">computer</i> Software Development</p>
-                        <p><i class="material-icons">web</i> Web Development</p>
-                        <!-- ... More details can be added in a similar pattern -->
-                    </div>
-                </div>
+            <div class="col s4">
+                <i class="material-icons large blue-text">code</i>
+                <h6>Node.js</h6>
+            </div>
+            <div class="col s4">
+                <i class="material-icons large blue-text">build</i>
+                <h6>Software Development</h6>
+            </div>
+            <div class="col s4">
+                <i class="material-icons large blue-text">web</i>
+                <h6>Web Development</h6>
             </div>
         </div>
     </div>
 
+    <!-- Experience Section -->
+    <div id="experience" class="container">
+        <h4 class="center-align">Experience</h4>
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue timeline-icon">work</i>
+                <span class="title">Technical Lead at Quick Heal</span>
+                <p>Working on Zero Trust User Access project.<br>Creating XDR, EDR for enterprise Security market.</p>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue timeline-icon">work</i>
+                <span class="title">Senior Software Engineer at ColorTokens, Inc.</span>
+                <p>Developed a monorepo based micro frontends architecture.<br>Worked on Xsecure - An Application security tool.</p>
+            </li>
+            <!-- Add more experiences as required -->
+        </ul>
+    </div>
+
+    <!-- Loading Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-
 </html>
