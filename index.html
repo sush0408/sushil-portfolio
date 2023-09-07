@@ -1,84 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushil Singh</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f5f7;
+            background: #edf2f7;
         }
 
-        .profile-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .profile-header {
-            background-image: linear-gradient(to right, #6b7bfe, #8e9efe);
-            padding: 40px;
-            border-radius: 10px 10px 0 0;
-            color: #fff;
-        }
-
-        .profile-icon {
-            font-size: 2rem;
-            margin-right: 10px;
+        .pattern-bg {
+            background-image: url('https://www.transparenttextures.com/patterns/debut-dark.png');
         }
     </style>
 </head>
+<body class="font-sans antialiased">
 
-<body>
-
-    <div class="container mt-5">
-        <!-- Profile Header -->
-        <div class="profile-card">
-            <div class="profile-header text-center">
-                <h1>Sushil Singh</h1>
-                <p>Technical Lead (Enterprise Engineering) | Software Architect</p>
+<div class="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div class="max-w-xl w-full mx-auto pattern-bg shadow-md p-6 rounded-lg">
+        <div class="flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold mb-4">Sushil Singh</h1>
+                <p class="text-gray-700 mb-4">Technical Lead (Enterprise Engineering) | Software Architect</p>
+                <p class="text-gray-600">"Solving real-world problems with cutting-edge software solutions."</p>
             </div>
-
-            <div class="row">
-                <!-- Contact & Links -->
-                <div class="col-md-4 mt-4">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-phone profile-icon"></i>8768777710</p>
-                    <p><i class="fas fa-envelope profile-icon"></i>sushil@cvtrobotics.in</p>
-                    <p><i class="fab fa-linkedin profile-icon"></i><a href="https://www.linkedin.com/in/sushil0408">LinkedIn</a></p>
-                    <p><i class="fas fa-briefcase profile-icon"></i><a href="https://www.wityliti.io">Company - Wityliti</a></p>
-                    <p><i class="fas fa-briefcase profile-icon"></i><a href="https://cvtrobotics.in">Company - CVT Robotics</a></p>
-                </div>
-
-                <!-- Skills -->
-                <div class="col-md-4 mt-4">
-                    <h4>Top Skills</h4>
-                    <p><i class="fas fa-code profile-icon"></i>Node.js</p>
-                    <p><i class="fas fa-cogs profile-icon"></i>Software Development</p>
-                    <p><i class="fas fa-laptop-code profile-icon"></i>Web Development</p>
-                </div>
-
-                <!-- Summary -->
-                <div class="col-md-4 mt-4">
-                    <h4>Summary</h4>
-                    <p>With the vision of making life more smart and comfortable, I started with IoT Technology...</p>
-                    <a href="#fullSummary">Read more</a>
-                </div>
-            </div>
+            <img src="path_to_your_image_or_avatar.jpg" alt="Sushil Singh" class="rounded-full h-24 w-24">
         </div>
 
-        <!-- Other content sections (Experience, Education) would go here -->
-
+        <div class="mt-8 space-y-4">
+            <div>
+                <h2 class="text-xl font-bold mb-2">Contact</h2>
+                <p><i class="fas fa-phone text-gray-600 mr-2"></i> 8768777710</p>
+                <p><i class="fas fa-envelope text-gray-600 mr-2"></i> sushil@cvtrobotics.in</p>
+                <p><i class="fab fa-linkedin text-blue-600 mr-2"></i> <a href="https://www.linkedin.com/in/sushil0408" class="text-blue-500 hover:text-blue-700">LinkedIn</a></p>
+            </div>
+            
+            <div>
+                <h2 class="text-xl font-bold mb-2">Skills</h2>
+                <p><i class="fas fa-code text-gray-600 mr-2"></i> Node.js</p>
+                <p><i class="fas fa-cogs text-gray-600 mr-2"></i> Software Development</p>
+                <p><i class="fas fa-laptop-code text-gray-600 mr-2"></i> Web Development</p>
+            </div>
+            
+            <div>
+                <h2 class="text-xl font-bold mb-2">Summary</h2>
+                <p>With a vision of making life smart and comfortable, I ventured into IoT Technology...</p>
+                <a href="#fullSummary" class="text-blue-500 hover:text-blue-700">Read more</a>
+            </div>
+        </div>
     </div>
+</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
