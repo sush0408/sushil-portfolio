@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushil Singh</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/css/materialize.min.css" rel="stylesheet">
     <style>
         body {
-            background: #edf2f7;
+            background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            font-family: 'Roboto', sans-serif;
         }
 
-        .pattern-bg {
-            background-image: url('https://www.transparenttextures.com/patterns/debut-dark.png');
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .card-title {
+            font-weight: bold;
         }
     </style>
 </head>
-<body class="font-sans antialiased">
 
-<div class="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-    <div class="max-w-xl w-full mx-auto pattern-bg shadow-md p-6 rounded-lg">
-        <div class="flex justify-between items-center">
-            <div>
-                <h1 class="text-3xl font-bold mb-4">Sushil Singh</h1>
-                <p class="text-gray-700 mb-4">Technical Lead (Enterprise Engineering) | Software Architect</p>
-                <p class="text-gray-600">"Solving real-world problems with cutting-edge software solutions."</p>
-            </div>
-            <img src="path_to_your_image_or_avatar.jpg" alt="Sushil Singh" class="rounded-full h-24 w-24">
-        </div>
+<body>
 
-        <div class="mt-8 space-y-4">
-            <div>
-                <h2 class="text-xl font-bold mb-2">Contact</h2>
-                <p><i class="fas fa-phone text-gray-600 mr-2"></i> 8768777710</p>
-                <p><i class="fas fa-envelope text-gray-600 mr-2"></i> sushil@cvtrobotics.in</p>
-                <p><i class="fab fa-linkedin text-blue-600 mr-2"></i> <a href="https://www.linkedin.com/in/sushil0408" class="text-blue-500 hover:text-blue-700">LinkedIn</a></p>
-            </div>
-            
-            <div>
-                <h2 class="text-xl font-bold mb-2">Skills</h2>
-                <p><i class="fas fa-code text-gray-600 mr-2"></i> Node.js</p>
-                <p><i class="fas fa-cogs text-gray-600 mr-2"></i> Software Development</p>
-                <p><i class="fas fa-laptop-code text-gray-600 mr-2"></i> Web Development</p>
-            </div>
-            
-            <div>
-                <h2 class="text-xl font-bold mb-2">Summary</h2>
-                <p>With a vision of making life smart and comfortable, I ventured into IoT Technology...</p>
-                <a href="#fullSummary" class="text-blue-500 hover:text-blue-700">Read more</a>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <div class="card hoverable z-depth-5">
+                    <div class="card-content">
+                        <span class="card-title center">Sushil Singh</span>
+                        <p class="center">Technical Lead (Enterprise Engineering) | Software Architect</p>
+                        <div class="divider"></div>
+                        <h5>Contact</h5>
+                        <p><i class="material-icons">phone</i> 8768777710</p>
+                        <p><i class="material-icons">email</i> sushil@cvtrobotics.in</p>
+                        <p><i class="material-icons">web</i> <a href="https://www.linkedin.com/in/sushil0408" target="_blank">LinkedIn</a></p>
+                        <p><i class="material-icons">business_center</i> <a href="https://www.wityliti.io" target="_blank">Wityliti</a></p>
+                        <p><i class="material-icons">business_center</i> <a href="https://cvtrobotics.in" target="_blank">CVT Robotics</a></p>
+
+                        <h5>Skills</h5>
+                        <p><i class="material-icons">code</i> Node.js</p>
+                        <p><i class="material-icons">computer</i> Software Development</p>
+                        <p><i class="material-icons">web</i> Web Development</p>
+                        <!-- ... More details can be added in a similar pattern -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>
